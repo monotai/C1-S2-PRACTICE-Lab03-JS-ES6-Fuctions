@@ -16,7 +16,7 @@ let students = [
 
 function updateStudentGrade(studentsArray, idToUpdate, newGrade) {
   // Step 1 : Use the findIndex method to find the index of the student with the provided ID in the studentsArray.
-  // const indexToUpdate = -1; it must initialy
+  // const indexToUpdate = -1; it must initially
 
   const indexToUpdate = studentsArray.findIndex((stu) => stu.id === idToUpdate);
   if (indexToUpdate !== -1) {
