@@ -25,3 +25,25 @@ for (let item of shoppingCart) {
   totalPrice += item.price * item.quantity;
 }
 console.log("Total price:", totalPrice);
+
+//fuction
+function calculateTotalPrice(shoppingCart) {
+  let totalPrice = 0;
+  for (let item of shoppingCart) {
+    totalPrice += item.price * item.quantity;
+  }
+  return totalPrice;
+}
+
+//check fuction
+totalPrice = calculateTotalPrice(shoppingCart);
+console.log("Total price:", totalPrice);
+
+// test with new shopping cart
+let shoppingCartNew = [
+  { name: "Milk", price: 1.2, quantity: 2 },
+  { name: "Bread", price: 1.5, quantity: 1 },
+  { name: "Eggs", price: 2.5, quantity: 6 },
+]
+totalPrice = calculateTotalPrice(shoppingCartNew);
+console.log("Total price:", totalPrice);

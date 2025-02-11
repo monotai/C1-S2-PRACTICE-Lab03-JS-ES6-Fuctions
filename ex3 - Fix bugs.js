@@ -12,7 +12,7 @@
 // You should use the DEBUGGER and execute step by step the function iterations.
 function findAverage(numbers) {
   let sum = 0;
-  for (let i = 0; i <= numbers.length; i++) {
+  for (let i = 0; i <= numbers.length; i++) {//this error because array have element from 0 to array.length - 1 (so can't equal array.lenght)
     sum += numbers[i];
   }
   return sum / numbers.length;
