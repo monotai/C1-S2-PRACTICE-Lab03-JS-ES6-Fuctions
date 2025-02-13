@@ -18,7 +18,7 @@ function updateArray(array, index, newValue) {
   // return array;
 
   //new code 
-  cloneArray = [...array];
+  let cloneArray = [...array];
   cloneArray[index] = newValue;
   return cloneArray;
 }
